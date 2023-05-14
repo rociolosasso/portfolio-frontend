@@ -16,11 +16,6 @@ isLogged = false;
 
 ngOnInit(): void {
   this.cargarEducacion();
-  if(this.tokenService.getToken()){
-    this.isLogged = true;
-  } else{
-    this.isLogged = false;
-  }
 }
 
 cargarEducacion(): void {
